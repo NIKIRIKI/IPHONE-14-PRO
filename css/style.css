@@ -1,0 +1,612 @@
+@charset "UTF-8";
+
+/* Обнуление стилей */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Общие стили для сокращения кода */
+.phone-order .wrapper .phone-order__inner .form__container .item h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #ffffff;
+}
+
+.what-new .wrapper .what-new__h2 h2, .pick-your-colors .wrapper .pick-your-colors__h2 h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #717171;
+}
+
+.pick-your-colors .wrapper .pick-your-colors__column .column__item .column__h3 h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #0a0a0a;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0a0a0a;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input::-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0a0a0a;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0a0a0a;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0a0a0a;
+}
+
+.what-new .wrapper .what-new__inner .what-new__text p, .pick-your-colors .wrapper .pick-your-colors__column .column__item .column__p p, .phone-order .wrapper .phone-order__inner .form__container .item .form form input::placeholder, .phone-order .wrapper .phone-order__inner .form__container .item .form p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0a0a0a;
+}
+
+header .header .wrapper .header__inner .header__column button, .phone-order .wrapper .phone-order__inner .form__container .item .form button {
+    background: #490e84;
+    border-radius: 30px;
+    width: 350px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+}
+
+header .header__nav .wrapper .nav__inner .menu__phone, header .header__nav .wrapper .nav__inner li a, footer .wrapper .footer__inner p a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #717171;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+body {
+    font-family: "Inter";
+}
+
+.wrapper {
+    width: 62.5%;
+    margin: 0 auto;
+}
+
+/* Секция header */
+header .header__nav {
+    background-color: #0a0a0a;
+    width: 100%;
+    position: fixed;
+    height: 110px;
+}
+
+header .header__nav .wrapper .nav__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 110px;
+}
+
+header .header__nav .wrapper .nav__inner .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+}
+
+header .header__nav .wrapper .nav__inner .menu__img img {
+    width: 39px;
+    height: 48px;
+}
+
+header .header__nav .wrapper .nav__inner .menu__phone {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+}
+
+header .header__nav .wrapper .nav__inner .menu__phone:hover {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+    color: #959393;
+    cursor: pointer;
+}
+
+header .header__nav .wrapper .nav__inner li a {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+}
+
+header .header__nav .wrapper .nav__inner li a:hover {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+    color: #959393;
+}
+
+header .header {
+    background: #f5f5f7;
+    padding: 183px 0 40px 0;
+}
+
+header .header .wrapper .header__inner .header__column h1 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #490e84;
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+
+header .header .wrapper .header__inner .header__column button {
+    margin: 25px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+}
+
+header .header .wrapper .header__inner .header__column button:hover {
+    background: #ffffff;
+    color: #490e84;
+    -webkit-box-shadow: 0px 2px 20px #717171;
+    box-shadow: 0px 2px 20px #717171;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+}
+
+/* Секция what-new */
+.what-new {
+    margin: 180px 0 150px 0;
+}
+
+.what-new .wrapper .what-new__h2 h2 {
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.what-new .wrapper .what-new__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.what-new .wrapper .what-new__inner .what-new__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+    width: 73%;
+}
+
+.what-new .wrapper .what-new__inner .what-new__text p {
+    max-width: 560px;
+}
+
+.what-new .wrapper .what-new__inner .what-new__text p:last-child {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.what-new .wrapper .what-new__inner .what-new__img .img-iphone {
+    margin: 0 0 0 120px;
+}
+
+/* Секция pick-your-colors */
+.pick-your-colors {
+    margin: 0 0 100px 0;
+}
+
+.pick-your-colors .wrapper .pick-your-colors__h2 h2 {
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.pick-your-colors .wrapper .pick-your-colors__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+    gap: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pick-your-colors .wrapper .pick-your-colors__column .column__item {
+    text-align: center;
+    width: 240px;
+    height: 400px;
+}
+
+.pick-your-colors .wrapper .pick-your-colors__column .column__item .column__h3 h3 {
+    padding: 20px 0 10px 0;
+}
+
+/* Секция phone-order */
+.phone-order .wrapper {
+    background-color: #574b63;
+}
+
+.phone-order .wrapper .phone-order__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.phone-order .wrapper .phone-order__inner .form {
+    height: 0px;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container {
+    margin: 45px 40px;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input {
+    background: none;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    color: #aba5b1;
+    margin: 0 0 30px 0;
+    width: 100%;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input::-webkit-input-placeholder {
+    color: #aba5b1;
+    line-height: 100px;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input::-moz-placeholder {
+    color: #aba5b1;
+    line-height: 100px;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input:-ms-input-placeholder {
+    color: #aba5b1;
+    line-height: 100px;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input::-ms-input-placeholder {
+    color: #aba5b1;
+    line-height: 100px;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form form input::placeholder {
+    color: #aba5b1;
+    line-height: 100px;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form p {
+    color: #aba5b1;
+    padding: 0 0 15px 0;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form button {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+    width: 240px;
+    height: 50px;
+    font-size: 14px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.phone-order .wrapper .phone-order__inner .form__container .item .form button:hover {
+    background: #ffffff;
+    color: #490e84;
+    -webkit-box-shadow: 0px 2px 20px #717171;
+    box-shadow: 0px 2px 20px #717171;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+}
+
+footer .wrapper .footer__inner {
+    color: #717171;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+footer .wrapper .footer__inner p a {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+}
+
+footer .wrapper .footer__inner p a:hover {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in, ease, linear;
+    transition-timing-function: ease-in, ease, linear;
+    color: #959393;
+}
+
+/* Для планшетов и маленьких ноутбуков */
+@media (max-width: 1200px) {
+    .phone-order__img {
+        width: 100% !important;
+    }
+
+    .wrapper {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header__menu {
+        gap: 5px !important;
+    }
+
+    .what-new__inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .what-new__inner .what-new__img {
+        padding: 0 0 20px 0;
+    }
+
+    .what-new__inner .what-new__img .img-iphone {
+        margin: 0 !important;
+    }
+
+    .pick-your-colors__column {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .phone-order .wrapper .phone-order__inner {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 1fr minmax(200px, 350px);
+        grid-template-rows: 1fr minmax(200px, 350px);
+    }
+
+    .phone-order .wrapper .phone-order__inner>*:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .phone-order .wrapper .phone-order__inner>*:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .phone-order .wrapper .phone-order__inner .form {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .phone-order .wrapper .phone-order__image.image {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        grid-row: 1 / 2;
+    }
+
+    .phone-order .wrapper .phone-order__image.image img {
+        width: 100%;
+    }
+}
+
+/* Для телефонов (портрет и ландшафт) */
+@media (max-width: 480px) {
+    button {
+        width: 250px !important;
+        height: 70px !important;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .header__nav {
+        height: 125px !important;
+    }
+
+    .header__nav .nav__inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 10px 0 0 0;
+        height: 120px !important;
+    }
+
+    .footer__inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 5px 0;
+    }
+}
